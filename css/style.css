@@ -1,0 +1,293 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* typography */
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #0E0E0E;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li a {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #090909;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.article-main {
+    color: #FFFFFF;
+}
+
+.article-main-date,
+.article-open-date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.article-main-title,
+.article-open-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-title {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.recent-posts-text {
+    font-weight: 700;
+    text-align: center;
+}
+
+.recent-post-date {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.recent-post-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.recent-post-content {
+    color: #505050;
+}
+
+.view-more-btn {
+    font-family: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.footer {
+    font-size: 0.75rem;
+}
+
+.footer-title {
+    font-weight: 700;
+    color: #ECECEC;
+}
+
+.footer-copyright {
+    color: #ECECEC;
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.main-title {
+    margin-left: 3px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0 0 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.article-main {
+    height: 300px;
+    background-image: url("/images/article-image-hero.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 25px 20px;
+    gap: 8px;
+}
+
+.article-open {
+    padding: 32px 20px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.article-main-header,
+.article-main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.article-main-header {
+    gap: 15px;
+}
+
+.article-main-content {
+    gap: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-section {
+    padding: 34px 20px 43px;
+}
+
+.recent-posts-text {
+    margin-bottom: 27px;
+}
+
+.recent-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 41px 26px;
+    margin: 0 auto 27px;
+}
+
+.recent-post-info {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.view-more-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background: #202020;
+    padding: 37px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+/* images */
+.main-logo {
+    width: 23px;
+    height: 23px;
+}
+
+.recent-post-image {
+    width: 100%;
+}
+
+.article-open-image {
+    width: 100%;
+    margin: 35px auto;
+    object-fit: cover;
+}
+
+.profile-pic {
+    width: 182px;
+    height: 182px;
+    margin-bottom: 27px;
+    margin-right: 33px;
+}
+
+/* responsive queries */
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 1.25rem;
+    }
+    
+    nav li a {
+        font-size: 1rem;
+    }
+
+    .article-main-date,
+    .article-open-date {
+        font-size: 1rem;
+    }
+    
+    .article-main-title {
+        font-size: 2.5rem;
+    }
+
+    .article-open-title {
+        font-size: 2.25rem;
+    }
+
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .recent-posts-text {
+        font-size: 1.5rem;
+    }
+
+    .recent-post-content {
+        font-size: 1.125rem;
+    }
+
+    .view-more-btn {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 841px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
